@@ -1,0 +1,49 @@
+
+body {
+    background: rgb(240, 240, 240);
+}
+
+.container-fluid {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bar {
+    display: inline-block;
+    margin: 0 1px;
+    width: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+    .bar {
+        margin: 0 1px;
+        width: 2px;
+    }
+}
+
+.flash {
+    animation-name: flashAnimation;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes flashAnimation {
+    0% {
+        background: lightgreen;
+    }
+
+    50% {
+        background: lightgreen;
+    }
+
+    75% {
+        background: lightgreen;
+    }
+
+    100% {
+        background: lightgreen;
+    }
+    
+}
